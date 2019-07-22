@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- This is the front page -->
+<html>
+    <head>
+        <!-- Info about the webpage here-->
+        <meta charset="utf-8">
+        <meta name= "viewport" content="width=device-width">
+        <meta name="description" content="Test Baw Website">
+        <meta name="keywords" content="Wood, Plastic, Metal, Custom Fabrication"><!--SEO stuff-->
+        <meta name="author" content="Jay Morgan">
+
+        <title>Baw Plastics | Products</title> <!--Browser Tab Change-->
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="container"> <!--use class if its used more then once-->
+                <div id="branding"> <!--use ID if its only used once-->
+                     <h1><span class="highlight">BAW</span> Plastics Inc</h1><!--****span keeps this on one line.***-->   <!--****Logo goes here***-->
+                </div>
+                <nav>
+                    <ul>
+                        <li><a  href="index.html">Home</a></li>
+                        <li class="current"><a href="Products.html">Products</a></li>
+                        <li><a href="Contact.html">Contact</a></li>  
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        
+        <section>
+        <div class="container">
+            <article id="main-col">
+             <H2 class="page-title">
+                 Products
+             </H2>
+                 <ul id="materials">
+                    <li>
+                        <h4>Plastic Fab</h4>
+                         <p>Cras aliquam iaculis nulla sed feugiat. Integer et nisl id justo posuere hendrerit eu eget sapien. Morbi imperdiet sit amet tellus vitae feugiat. Nam pellentesque nibh a velit efficitur suscipit. </p>
+                    </li>
+                    <li>
+                        <h4>Wood Fab</h4>
+                            <p>Vivamus varius massa id odio aliquam, a aliquet purus faucibus.</p>
+                    </li>
+                    <li>
+                        <h4>Metal Fab</h4>
+                            <p>Proin id vehicula velit. Aenean luctus porta urna, et tincidunt quam elementum eget.</p>
+                    </li>
+                 </ul>       
+            </article> 
+            <aside id="sidebar">
+                    <div class="dark">
+                      <h3>Get A Quote</h3>
+                      <form class="quote">
+                                    <div>
+                                        <label>Name</label><br>
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div>
+                                        <label>Email</label><br>
+                                        <input type="email" placeholder="Email">
+                                    </div>
+                                    <div>
+                                        <label>Message</label><br>
+                                        <textarea placeholder="Message"></textarea>
+                                    </div>
+                                    <button class="button_1" type="submit">Send</button>
+                              </form>
+                    </div>
+                  </aside>
+
+         </div>
+     </section>
+       
+        
+       <section id="newsletter"><!--Subscribe to news letter section-->
+        <div class="container">
+            <h1>Subscribe To Our News Letter</h1>
+            <!-- this is where the  <form action="process.php"> goes to collect data-->
+                <form>
+                    <input type="email" placeholder="Enter Email...">
+                    <button type=" Submit" class="button_1">Subscribe</button>
+                </form>
+        </div> 
+           
+    </section>
+    <footer>
+            
+        <p> Baw Plastics Inc, Copyright &copy; 2019</p> <!--Note the "&copy;" makes the symbol-->
+    </footer>
+    </body>
+
+</html>

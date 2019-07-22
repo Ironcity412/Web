@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- This is the front page -->
+<html>
+    <head>
+        <!-- Info about the webpage here-->
+        <meta charset="utf-8">
+        <meta name= "viewport" content="width=device-width">
+        <meta name="description" content="Test Baw Website">
+        <meta name="keywords" content="Wood, Plastic, Metal, Custom Fabrication"><!--SEO stuff-->
+        <meta name="author" content="Jay Morgan">
+
+        <title>Baw Plastics | Welcome</title> <!--Browser Tab Change-->
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <meta name="google" content="notranslate"> <!-- supresses google translate--- this must be in this spot to work.*/-->
+
+    <body>
+        <header>
+                
+            <div class="container"> <!--use class if its used more then once-->
+                <div id="branding"> <!--use ID if its only used once-->
+                     <h1><span class="highlight">BAW</span> Plastics Inc</h1><!--****span keeps this on one line.***-->   <!--****Logo goes here***-->
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a  href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="Contact.html">Contact</a></li>  
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <section id="showcase"> <!--Banner Area-->
+            <div class="container">
+                <h1>Professional Custom Designs</h1>
+                <p>Metal, Wood, or Plastic we got you covered.</p>
+            </div>
+        </section>
+        <section id="newsletter"><!--Subscribe to news letter section-->
+            <div class="container">
+                <h1>Subscribe To Our News Letter</h1>
+                <!-- this is where the  <form action="process.php"> goes to collect data-->
+                    <form>
+                        <input type="email" placeholder="Enter Email...">
+                        <button type=" Submit" class="button_1">Subscribe</button>
+                    </form>
+            </div>    
+        </section>
+
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                    <!--Note Icons Are 75x75 pix-->
+                    <img src="Images/user-icon-female-white-hi2.png">
+                  <h3>Female Owned</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus felis quis nisl sagittis iaculis. Vestibulum id luctus ante, eget gravida felis. Integer feugiat nulla vitae porttitor dignissim. In vestibulum ac quam sed fermentum.
+                  </p>
+                </div> 
+                <div class="box">
+                        <img src="Images/carpenter2.png">
+                    <h3>HandCrafted Products</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus felis quis nisl sagittis iaculis. Vestibulum id luctus ante, eget gravida felis. Integer feugiat nulla vitae porttitor dignissim. In vestibulum ac quam sed fermentum.
+                    </p>
+                </div>  
+                <div class="box">
+                        <img src="Images/router2.png">
+                        <h3>State of the Art Equipment</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus felis quis nisl sagittis iaculis. Vestibulum id luctus ante, eget gravida felis. Integer feugiat nulla vitae porttitor dignissim. In vestibulum ac quam sed fermentum.
+                        </p>
+                </div> 
+            </div>
+        </section>
+        <footer>
+<p> Baw Plastics Inc, Copyright &copy; 2019</p> <!--Note the "&copy;" makes the symbol-->
+
+        </footer>
+    </body>
+
+</html>

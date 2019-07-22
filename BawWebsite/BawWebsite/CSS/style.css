@@ -1,0 +1,220 @@
+/* setting up defaults */
+body{
+    font-family: Arial,Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color:#FFFFFF;
+}
+
+.dark{
+    padding: 15px;
+    background:#37383b;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+
+.container{ /* use dot for classes*/
+    width:80%; /* use % for responsive  */
+    margin:auto; /* moves to middle  */
+    overflow: hidden; /* hides scrollbars  */
+}
+ul{ /*  remove dots from list. */
+    margin: 0;
+    padding: 0; /* default for list has padding*/
+}
+.button_1{
+    height: 25px;
+    background: #dbd51f;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#FFFFFF;
+    font-size: 15px;
+    text-shadow: 2px 2px black;
+    border-radius: 4px;
+       
+}
+
+header{
+  
+    color:#FFFFFF;
+    padding-top: 30px;
+    min-height:70px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,10,1) 56%, rgba(219,213,31,1) 100%);
+}
+
+header a{ /* this covers header and "a" */
+    color:#FFFFFF;
+    text-decoration: none; /* removes the underline these have by default */
+    text-transform: uppercase; /* makes the text all uppercase */
+    font-size: 13px;
+}
+
+Header li{ /* default for list has padding*/
+    display:inline;
+    padding: 0 20px 0 20px;  /* note this goes clockwise top right bottom left.*/
+   }
+
+header #branding{
+    float:left;
+}
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+    
+}
+
+Header .highlight, header .current a{ /* highlights home and BAW*/
+    color: #dbd51f;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:#FFFFFF;
+    font-weight:bold;
+    font-size: 17px;
+}
+/* ---------showcase------------ */
+#showcase{
+    min-height: 400px;
+    background: url('../Images/flower2y.jpg') no-repeat 0 -250px;/* -#px left&right, -#px up&down; this moves the image if added here*/
+    background-size:auto;
+    text-align: right;
+    color:#FFFFFF;
+}
+
+#showcase h1{ /* showcase  wording*/
+margin-top: 100px;
+font-size: 30px;
+margin-bottom: 10px;
+text-shadow: 2px 2px black;
+}
+#showcase p{ /* showcase  wording part 2*/
+    
+    font-size: 15px;
+    text-shadow: 2px 2px black;
+}
+
+/*  ---------NewsLetter----------*/
+#newsletter{  /* CSS Gradiant builder https://cssgradient.io/ */
+    padding: 15px;
+    color:#cccccc;
+    /*background: #140b04;
+    border-top: #dbd51f 3px solid;*/
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,10,1) 51%, rgba(219,213,31,1) 100%);
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 20px;
+
+}
+#newsletter input[type="email"]{
+    padding: 3px;
+    width: 250px;
+    
+}
+
+/*  ---------BOXES----------*/
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;  
+}
+
+#boxes .box img{  /* calling out img, so you can control them.*/
+    width: 90px;
+}
+
+/*---------------SideBar----------*/
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input,aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+/*----------main-col------*/
+article#main-col{
+    float: left;
+    width: 65%;
+}
+/*-----------materials-------------*/
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #37383b solid 1px;
+    margin-bottom: 5px;
+    background: #37383b
+}
+
+
+/*-------------Footer------------*/
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color:#FFFFFF;
+    background:  #dbd51f;
+    text-shadow: 2px 2px black;
+}
+/*-------------- Check for Mobile and Resize (media query)----*/
+/*---Note: shut floats off for mobile devices or similar.--*/
+
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article #main-col
+
+
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }    
+    header{
+        padding-bottom: 20px; 
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #newsletter form input[type="email"]{
+        margin-bottom: 5px;
+    }
+    aside#sidebar{
+        text-align: center;
+        width: 100%;
+        /* next time group into sections by page and comment!!!!!!!!!!!*/
+    }
+
+}
